@@ -23,3 +23,13 @@ end
   puts "This is the sentence number #{idx+1}"
 end
 
+
+# pick a number between 1 and 100 and try and get the correct answer
+
+n = rand(100)
+input = gets.chomp.to_i
+while (input != n) do
+  puts (input < n) ? "Too low" : "Too high"
+  input = gets.chomp.to_i
+end
+puts "Correct! The answer was #{n}"
