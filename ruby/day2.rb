@@ -48,3 +48,16 @@ end
 
 tree = Tree.new({'grandpa'=>{'dad'=>{'child 1'=>{},'child 2'=>{}},'uncle'=>{'child 3'=>{},'child 4'=>{}}}})
 tree.visit_all {|node| puts node.node_name }
+
+puts
+
+# Write a simple grep that prints lines of file having occurences of a phrase. In this case 'moon'
+
+#num = 1
+f = File.open("moon_wiki.txt")
+f.each do |line|
+  if (line.grep(/moon/i).length > 0) 
+    puts "Match on line #{f.lineno} - #{line}"
+  end
+end
+
