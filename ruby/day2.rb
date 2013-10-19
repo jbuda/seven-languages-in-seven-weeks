@@ -53,7 +53,6 @@ puts
 
 # Write a simple grep that prints lines of file having occurences of a phrase. In this case 'moon'
 
-#num = 1
 f = File.open("moon_wiki.txt")
 f.each do |line|
   if (line.grep(/moon/i).length > 0) 
