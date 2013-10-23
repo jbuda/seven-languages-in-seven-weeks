@@ -1,2 +1,4 @@
-one,two
-lions,tigers
+name,age
+Huey,20
+Luey,10
+Duey,30
